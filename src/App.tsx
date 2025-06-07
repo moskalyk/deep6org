@@ -232,7 +232,7 @@ const AudioView = () => {
   return (
     <>
       <h1>audio</h1>
-      <p>for readings contact morgan @ <a href="mailto:build@deep6.org">build@deep6.org</a></p>
+      <p>for tarot readings contact morgan @ <a href="mailto:build@deep6.org">build@deep6.org</a></p>
       <br/>
       <br/>
       <h3>example reading </h3>
@@ -240,7 +240,8 @@ const AudioView = () => {
       <br/>
       <br/>
       <h3>post spread</h3>
-      <YouTube videoId={'GrNXVNqTI4Y'} />
+      {/* @ts-ignore */}
+      <YouTube width={detectMob() && '200px'} videoId={'GrNXVNqTI4Y'} />
     </>
   )
 }
@@ -250,9 +251,16 @@ const ShopView = () => {
     <>
       <h1>shop</h1>
       <i>Hand Sensing Deck, coming september 2025</i>
+      <br/>
+      <br/>
+      <i>"why ask?" t-shirt, coming soon</i>
     </>
   )
 }
+
+    function detectMob(): any {
+    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+  }
 
 function App() {
   const [menu, setMenu] = useState(0)
@@ -304,14 +312,15 @@ function App() {
   return (
     <>
       
-      {hideMenu&&<div style={{position: 'fixed', top: '30px', right: '100px'}}>
-        <span id="menu" style={{padding: '20px', cursor: 'pointer', textDecoration: menu == 0 ? 'underline': ''}} onClick={() => {
+      {hideMenu&&<div style={{position: detectMob() ? 'relative': 'fixed', margin:'auto', top: '30px', right: detectMob() ? '0px':'100px'}}>
+        <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 0 ? 'underline': ''}} onClick={() => {
           setMenuState(false);
           setMenu(0)}}>♆ home</span>
-        <span id="menu" style={{padding: '20px',  cursor: 'pointer', textDecoration: menu == 1 ?'underline': ''}}onClick={() => {setMenuState(true);setMenu(1)}}>🂿 tricks</span>
-        <span id="menu" style={{padding: '20px',  cursor: 'pointer', textDecoration: menu == 2 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(2)}}>✺ spreads</span>
-        <span id="menu" style={{padding: '20px',  cursor: 'pointer', textDecoration: menu == 3 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(3)}}>~ audio</span>
-        <span id="menu" style={{padding: '20px',  cursor: 'pointer', textDecoration: menu == 4 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(4)}}>⛤ shop</span>
+        <span id="menu" style={{padding: '11px',  margin: '5px',cursor: 'pointer', textDecoration: menu == 1 ?'underline': ''}}onClick={() => {setMenuState(true);setMenu(1)}}>🂿 tricks</span>
+        <span id="menu" style={{padding: '11px',  margin: '5px',cursor: 'pointer', textDecoration: menu == 2 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(2)}}>✺ spreads</span>
+        {detectMob() && <br/>}
+        <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 3 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(3)}}>~ audio</span>
+        <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 4 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(4)}}>⛤ shop</span>
       </div>}
       {
 
