@@ -168,7 +168,7 @@ const TricksView = () => {
       <br/>
       <br/>
       <h3 ref={elementalFixing} id='elemental-fixing'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>elemental fixing</h3>
-      <p>when exploring your elemental spirit, one can perform a ritual of fixing a constant element (choosing one from the earth, air, fire, water) and conjuring essences in the other elements as a way to have more stable control. for example, you can use the entry / exit tactics for beginning and ending a session with a single element, while exploring the other three. it helps to perform sound between sessions. by sitting, time horizons tend to be concentrated, versus standing, you are more dispersed (think, time and space)</p>
+      <p>when exploring your elemental spirit, one can perform a ritual of fixing a constant element (choosing one from the earth, air, fire, water) and conjuring essences in the other elements as a way to have more stable control. for example, you can use the entry / exit tactics for beginning and ending a session with a single element, while exploring the other three. it helps to perform sound between sessions. by sitting, time horizons tend to be concentrated, versus standing, you are more dispersed (think, time and space).</p>
       <br/>
       <br/>
       <h3 ref={room} id='room'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>how to read the room</h3>
@@ -180,11 +180,11 @@ const TricksView = () => {
       <br/>
       <br/>
       <h3 ref={miniMining} id='mini-mining'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>mini-beliefs</h3>
-      <p>one can look at a calendar as a stitched together grid that it not just day to day. weeks can become morphed together as long as you're keeping track of significant experiences on each day. you can use <a href="https://calendat.vercel.app">this app</a> to do so where one can find windows of time to swing through dates from some zenith (or anchor) to find patterns in the monthly calendar</p>
+      <p>one can look at a calendar as a stitched together grid that it not just day to day. weeks can become morphed together as long as you're keeping track of significant experiences on each day. you can use <a href="https://calendat.vercel.app">this app</a> to do so where one can find windows of time to swing through dates from some zenith (or anchor) to find patterns in the monthly calendar.</p>
       <br/>
       <br/>
       <h3 ref={mixingNature} id='mixing-nature'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)} >mixing nature</h3>
-      <p>do not be afraid to mix plants, animals, totems, or other natural occuring phenomenon into your rituals</p>
+      <p>do not be afraid to mix plants, animals, totems, or other natural occuring phenomenon into your rituals.</p>
       <br/>
       <br/>
       <h3 ref={dreams} id='dreams'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>dreams</h3>
@@ -199,11 +199,13 @@ const TricksView = () => {
 const SpreadsView = () => {
   return (
     <>
+      <div style={{maxWidth: detectMob() &&'336px'}}>
+
       <h1>spreads</h1>
       <br/>
       <h3>jung spread</h3>
-      <img style={{marginLeft: '-35px'}} src={jungTarotSpread} />
-      <ul style={{width:'500px', margin: 'auto', textAlign: 'left'}}>
+      <img style={{width: detectMob() && '100%',marginLeft: detectMob() ? '-5px': '-35px'}} src={jungTarotSpread} />
+      <ul style={{fontSize: detectMob() ? '10px': '15px', width:'500px', margin: 'auto', textAlign: 'left'}}>
         <li>1 present</li>
         <li>2 oracle card pulled randomly, flipped at end</li>
         <li>3 oracle card pulled randomly, flipped at end</li>
@@ -219,18 +221,21 @@ const SpreadsView = () => {
       <hr/>
       <br/>
       <h3>past, present, future</h3>
-      <div style={{fontSize: '200px', fontWeight: '100'}}>▯ ▯ ▯</div>
+      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>▯ ▯ ▯</div>
       <br/>
       <hr/>
       <br/>
-      <h3><a href="https://labyrinthos.co/blogs/learn-tarot-with-labyrinthos-academy/the-celtic-cross-tarot-spread-exploring-the-classic-10-card-tarot-spread">celtic cross</a></h3>
+      <h3><a href="https://labyrinthos.co/blogs/learn-tarot-with-labyrinthos-academy/the-celtic-cross-tarot-spread-exploring-the-classic-10-card-tarot-spread">celtic cross spread</a></h3>
+      </div>
     </>
   )
 }
 
 const AudioView = () => {
   return (
-    <>
+    <>  
+      <div style={{maxWidth: detectMob() &&'500px'}}>
+
       <h1>audio</h1>
       <p>for tarot readings contact morgan @ <a href="mailto:build@deep6.org">build@deep6.org</a></p>
       <br/>
@@ -241,7 +246,9 @@ const AudioView = () => {
       <br/>
       <h3>post spread</h3>
       {/* @ts-ignore */}
-      <YouTube width={detectMob() && '200px'} videoId={'GrNXVNqTI4Y'} />
+      <YouTube opts={{width: detectMob() ? '200px' : '500px', height: detectMob() ? '100px' : '300px'}} videoId={'GrNXVNqTI4Y'} />
+      </div>
+
     </>
   )
 }
@@ -259,7 +266,7 @@ const ShopView = () => {
 }
 
     function detectMob(): any {
-    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+    return ( ( window.innerWidth <= 800 ));
   }
 
 function App() {
@@ -312,18 +319,24 @@ function App() {
   return (
     <>
       
-      {hideMenu&&<div style={{position: detectMob() ? 'relative': 'fixed', margin:'auto', top: '30px', right: detectMob() ? '0px':'100px'}}>
+      {hideMenu&&<div style={{position: detectMob() ? 'relative': 'fixed', margin:'auto', left: detectMob() && '45%', transform:detectMob() &&  'translateX(-50%)', width: detectMob() && '300px', top: '30px', right: detectMob() ? '0px':'100px'}}>
         <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 0 ? 'underline': ''}} onClick={() => {
           setMenuState(false);
           setMenu(0)}}>♆ home</span>
         <span id="menu" style={{padding: '11px',  margin: '5px',cursor: 'pointer', textDecoration: menu == 1 ?'underline': ''}}onClick={() => {setMenuState(true);setMenu(1)}}>🂿 tricks</span>
+        {detectMob() && <><br/></>}
+        {detectMob() && <><br/></>}
         <span id="menu" style={{padding: '11px',  margin: '5px',cursor: 'pointer', textDecoration: menu == 2 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(2)}}>✺ spreads</span>
-        {detectMob() && <br/>}
         <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 3 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(3)}}>~ audio</span>
+        {detectMob() && <><br/></>}
+        {detectMob() && <><br/></>}
         <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 4 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(4)}}>⛤ shop</span>
       </div>}
       {
-
+        <>
+        <br/>
+        <br/>
+        </>
       }
       <div>
         {Compass(menu)}
