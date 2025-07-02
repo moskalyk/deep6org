@@ -101,6 +101,11 @@ const TricksView = () => {
         elementalFixing.scrollIntoView();
 
       break;
+      case 'graphs-vs-trees':
+        //@ts-ignore
+        elementalFixing.scrollIntoView();
+
+      break;
       case 'room':
         //@ts-ignore
         room.scrollIntoView();
@@ -171,12 +176,16 @@ const TricksView = () => {
       <p>when exploring your elemental spirit, one can perform a ritual of fixing a constant element (choosing one from the earth, air, fire, water) and conjuring essences in the other elements as a way to have more stable control. for example, you can use the entry / exit tactics for beginning and ending a session with a single element, while exploring the other three. it helps to perform sound between sessions. by sitting, time horizons tend to be concentrated, versus standing, you are more dispersed (think, time and space).</p>
       <br/>
       <br/>
+      <h3 ref={elementalFixing} id='graphs-vs-trees'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>graphs vs. trees</h3>
+      <p>when exploring scenarios of information that are related to your environment (for example the trick of environmental fixing), it's important to be aware of whether you're dealing with a graph structure or a tree structure. with graphs, you're more likely to repeat or rebound an outcome, which may cause internal introspection. it is possible to convert graphs to tree's and there are theoritical algorithms online, however a possible approach is to go till failure with karmic actions and intentions of safety. trees have a natural tendency when adding elements such as air and intellect to have movement, like leaves being blown in a tree. trees can also contain graphs contained within them (like fruit on a tree) which can also contain new trees that can grow.</p>
+      <br/>
+      <br/>
       <h3 ref={room} id='room'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>how to read the room</h3>
       <p>deep breaths, and awarness from the visual system is a great way to see, beyond time, where you are in the room of the void. windows still exist, however, it's a good idea to take stock of important priorities that are arising in the present before taking action.</p>
       <br/>
       <br/>
       <h3 ref={astrology} id='astrology'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>astrology</h3>
-      <p>daily astrology is a fun way to swing between the planets and learn what is happneing in the global skies. it's important to begin by learning your natal charts, then, use these signifies as stepping stones for advancing the year and planning.</p>
+      <p>daily astrology is a fun way to swing between the planets and learn what is happening in the global skies. it's important to begin by learning your natal charts, then, use these signifies as stepping stones for advancing the year and planning.</p>
       <br/>
       <br/>
       <h3 ref={miniMining} id='mini-mining'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>mini-beliefs</h3>
