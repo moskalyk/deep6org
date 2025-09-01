@@ -235,6 +235,33 @@ const SpreadsView = () => {
       <hr/>
       <br/>
       <h3><a href="https://labyrinthos.co/blogs/learn-tarot-with-labyrinthos-academy/the-celtic-cross-tarot-spread-exploring-the-classic-10-card-tarot-spread">celtic cross spread</a></h3>
+      <hr/>
+      <h3>arrow of time spread</h3>
+      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>   &nbsp;&nbsp;▯ </div>
+      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>▯ ▯ ▯</div>
+      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>   &nbsp;&nbsp;▯ </div>
+      <ul style={{fontSize: detectMob() ? '10px': '15px', width:'500px', margin: 'auto', textAlign: 'left'}}>
+        <li>1 what you have to leave behind</li>
+        <li>2 where your capability or power or strength comes from</li>
+        <li>3 present future</li>
+        <li>4 what your dreams are telling you</li>
+        <li>5 what you're not seeing</li>
+      </ul>
+      <hr/>
+
+      <h3>rythmic spread</h3>
+      <div style={{marginLeft: '-334px'}}>
+      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>▯ </div>
+      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}> &nbsp;&nbsp;&nbsp;▯ ▯</div>
+      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>  &nbsp;&nbsp;&nbsp;▯</div>
+      <ul style={{fontSize: detectMob() ? '10px': '15px', width:'500px', margin: 'auto', textAlign: 'left'}}>
+        <li>1 nostalgia</li>
+        <li>2 direction</li>
+        <li>3 reversal</li>
+        <li>4 connection</li>
+      </ul>
+      </div>
+
       </div>
     </>
   )
