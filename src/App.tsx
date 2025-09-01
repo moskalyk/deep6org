@@ -200,8 +200,19 @@ const TricksView = () => {
       <p>aim to listen to your dreams and take action during the day to accomdate what the mind and sky is telling you. staying sober enables a more productive and healthy envrionment for dreams to arise while sleeping. it's possible to train yourself to no longer need a dream journal.</p>
       <br/>
       <br/>
-    </>
-    
+      <h3 ref={dreams} id='portals-of-transport'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>portals of transportation</h3>
+      <p>historic paths of the past, viewing perspectives of others, and varying mode of transport can create 'after burner' effects creating an idea of an after burner funnel, where outbreak like quality can be achieved (think edge of funnel of portal and tail emissions).</p>
+      <br/>
+      <br/>
+      <h3 ref={dreams} id='temp-motion'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>the fall movement</h3>
+      <p>during times of the fall and temperatures outside that are close to the body, can give you ideal temperatures for movement and body temperature to make you feel aware of motion from wind.</p>
+      <br/>
+      <br/>
+      <h3 ref={dreams} id='if-out-of-time'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>if 'out of time'</h3>
+      <p>moments can speckle out into the future where if we can't get everything done today or now, structures of goals can be picked up later as shapes in the calendar.</p>
+      <br/>
+      <br/>
+    </> 
   )
 }
 
@@ -254,7 +265,7 @@ const SpreadsView = () => {
       <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '10'}}>[1] </div>
       <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '10'}}> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2] [4]</div>
       <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '10'}}>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3]</div>
-      <ul style={{fontSize: detectMob() ? '10px': '15px', width:'500px', margin: 'auto', textAlign: 'left'}}>
+      <ul style={{fontSize: detectMob() ? '10px': '15px', width:'400px', margin: 'auto', textAlign: 'left'}}>
         <li>1 nostalgia</li>
         <li>2 direction</li>
         <li>3 reversal</li>
@@ -273,7 +284,7 @@ const AudioView = () => {
       <div style={{maxWidth: detectMob() &&'500px'}}>
 
       <h1>audio</h1>
-      <p>for tarot readings contact morgan @ <a href="mailto:build@deep6.org">build@deep6.org</a></p>
+      <p>for an oracle reading with cards contact morgan @ <a href="mailto:build@deep6.org">build@deep6.org</a></p>
       <br/>
       <br/>
       <h3>example reading </h3>
@@ -296,7 +307,6 @@ const ShopView = () => {
       <i>Hand Sensing Deck, coming september 2025</i>
       <br/>
       <br/>
-      <i>"why ask?" t-shirt, coming soon</i>
     </>
   )
 }
@@ -359,14 +369,14 @@ function App() {
         <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 0 ? 'underline': ''}} onClick={() => {
           setMenuState(false);
           setMenu(0)}}>♆ home</span>
-        <span id="menu" style={{padding: '11px',  margin: '5px',cursor: 'pointer', textDecoration: menu == 1 ?'underline': ''}}onClick={() => {setMenuState(true);setMenu(1)}}>🂿 tricks</span>
+        <span id="menu" style={{padding: '11px',  margin: '5px',cursor: 'pointer', textDecoration: menu == 1 ?'underline': ''}}onClick={() => {setMenuState(true);setMenu(1)}}>🂡 tricks</span>
         {detectMob() && <><br/></>}
         {detectMob() && <><br/></>}
         <span id="menu" style={{padding: '11px',  margin: '5px',cursor: 'pointer', textDecoration: menu == 2 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(2)}}>✺ spreads</span>
         <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 3 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(3)}}>~ audio</span>
         {detectMob() && <><br/></>}
         {detectMob() && <><br/></>}
-        <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 4 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(4)}}>⛤ shop</span>
+        <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 4 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(4)}}>$ shop</span>
       </div>}
       {
         <>
