@@ -237,9 +237,9 @@ const SpreadsView = () => {
       <h3><a href="https://labyrinthos.co/blogs/learn-tarot-with-labyrinthos-academy/the-celtic-cross-tarot-spread-exploring-the-classic-10-card-tarot-spread">celtic cross spread</a></h3>
       <hr/>
       <h3>arrow of time spread</h3>
-      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>   &nbsp;&nbsp;▯ </div>
-      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>▯ ▯ ▯</div>
-      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>   &nbsp;&nbsp;▯ </div>
+      <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '10'}}>   &nbsp;&nbsp;[4] </div>
+      <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '10'}}>[1] [2] [3]</div>
+      <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '100'}}>   &nbsp;&nbsp;[5] </div>
       <ul style={{fontSize: detectMob() ? '10px': '15px', width:'500px', margin: 'auto', textAlign: 'left'}}>
         <li>1 what you have to leave behind</li>
         <li>2 where your capability or power or strength comes from</li>
@@ -250,10 +250,10 @@ const SpreadsView = () => {
       <hr/>
 
       <h3>rythmic spread</h3>
-      <div style={{marginLeft: '-334px'}}>
-      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>▯ </div>
-      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}> &nbsp;&nbsp;&nbsp;▯ ▯</div>
-      <div style={{fontSize: detectMob() ? '50px': '200px', fontWeight: '100'}}>  &nbsp;&nbsp;&nbsp;▯</div>
+      <div style={{marginLeft: '-84px'}}>
+      <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '10'}}>[1] </div>
+      <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '10'}}> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2] [4]</div>
+      <div style={{fontSize: detectMob() ? '20px': '30px', fontWeight: '10'}}>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3]</div>
       <ul style={{fontSize: detectMob() ? '10px': '15px', width:'500px', margin: 'auto', textAlign: 'left'}}>
         <li>1 nostalgia</li>
         <li>2 direction</li>
