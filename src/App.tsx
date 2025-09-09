@@ -3,6 +3,7 @@ import deep6Logo from './assets/deep6.png'
 import jungTarotSpread from './assets/jung_tarot_spread.png'
 import './App.css'
 import YouTube from 'react-youtube';
+import oracleCardShowcase from './assets/example_of_cards.jpeg'
 
 const HomeView = () => {
   return (
@@ -284,7 +285,7 @@ const AudioView = () => {
       <div style={{maxWidth: detectMob() &&'500px'}}>
 
       <h1>audio</h1>
-      <p>for an oracle reading with cards contact morgan @ <a href="mailto:build@deep6.org">build@deep6.org</a></p>
+      <p>for an oracle reading with cards contact morgan @ <a href="mailto:morgan.moskalyk@protonmail.ch">morgan.moskalyk@protonmail.ch</a></p>
       <br/>
       <br/>
       <h3>example reading </h3>
@@ -304,7 +305,18 @@ const ShopView = () => {
   return (
     <>
       <h1>shop</h1>
-      <i>Hand Sensing Deck, coming september 2025</i>
+      <i>Oracle Hand Sensing Deck</i>
+      <p>$53 CAD + shipping & tax</p>
+      <br/>
+      <div style={{width: '50%', margin: 'auto'}}>
+      <p>the oracle hand sensing deck include 18 custom pencil drawn images sourced from www.are.na and 15 tool based items with no image, only a planet and natural element alchemical is signified which you might use with your hands.</p>
+      <p>the intention is to allow readers and querents to get in tune with how to express emotions with sign like languages, with expansive words to decribe the description of the cards, and action oriented ways to construct the world.</p>
+      </div>
+      <br/>
+      <br/>
+      <img style={{width: '30%'}} src={oracleCardShowcase} />
+      <p>each deck is packaged with a unique cloth that can be used to read the cards in a spread</p>
+      <p>please organize an order & e-transfer via email morgan.moskalyk@protonmail.ch</p>
       <br/>
       <br/>
     </>
@@ -319,6 +331,15 @@ function App() {
   const [menu, setMenu] = useState(0)
   const [hideMenu, setHideMenu] = useState(true)
   const [menuState, setMenuState] = useState(true)
+  const [shopUTF, setShopUTF] = useState('⛤')
+
+  useEffect(() => {
+    setTimeout(async () => {
+      // @ts-ignore
+      const isBrave = (navigator.brave && await navigator.brave.isBrave() || false)
+      isBrave&&setShopUTF('$')
+    }, 0)
+  })
 
   useEffect(() => {
 
@@ -376,7 +397,7 @@ function App() {
         <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 3 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(3)}}>~ audio</span>
         {detectMob() && <><br/></>}
         {detectMob() && <><br/></>}
-        <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 4 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(4)}}>$ shop</span>
+        <span id="menu" style={{padding: '11px', margin: '5px', cursor: 'pointer', textDecoration: menu == 4 ? 'underline': ''}}onClick={() => {setMenuState(false);setMenu(4)}}>{shopUTF} shop</span>
       </div>}
       {
         <>
