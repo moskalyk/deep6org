@@ -37,11 +37,15 @@ const TricksView = () => {
   const youth = useRef<any>(null)
   const altair = useRef<any>(null)
   const elementalFixing = useRef<any>(null)
+  const graphVsTrees = useRef<any>(null)
   const room = useRef<any>(null)
   const astrology = useRef<any>(null)
   const miniMining = useRef<any>(null)
   const mixingNature = useRef<any>(null)
   const dreams = useRef<any>(null)
+  const portalsOfTransport = useRef<any>(null)
+  const tempMotion = useRef<any>(null)
+  const ifOutOfTime = useRef<any>(null)
 
   function doWithThisElement(event: any) {
     event = event || window.event; // IE
@@ -50,8 +54,8 @@ const TricksView = () => {
     var id = target.id;
     // window.location = window.location + "#" + id as any
 
-     navigator.clipboard.writeText(window.location.host +'/' + 'tricks'+"#" + id);
-}
+    navigator.clipboard.writeText(window.location.host +'/' + 'tricks'+"#" + id);
+  }
 
   useEffect(() => {
     if((window.location.href as string).split('/tricks')[1]=='#playing-cards'){
@@ -81,12 +85,11 @@ const TricksView = () => {
         scentsAndFood.scrollIntoView();
 
       break;
-
       case 'seconds':
         //@ts-ignore
        seconds.scrollIntoView();
-       break;
 
+       break;
       case 'youth':
         //@ts-ignore
         youth.scrollIntoView();
@@ -104,7 +107,7 @@ const TricksView = () => {
       break;
       case 'graphs-vs-trees':
         //@ts-ignore
-        elementalFixing.scrollIntoView();
+        graphVsTrees.scrollIntoView();
 
       break;
       case 'room':
@@ -130,6 +133,22 @@ const TricksView = () => {
       case 'dreams':
         //@ts-ignore
         dreams.scrollIntoView();
+
+      break;
+      case 'portals-of-transport':
+        //@ts-ignore
+        portalsOfTransport.scrollIntoView();
+
+      break;
+      case 'temp-motion':
+        //@ts-ignore
+        tempMotion.scrollIntoView();
+
+      break;
+      case 'if-out-of-time':
+        //@ts-ignore
+        ifOutOfTime.scrollIntoView();
+
       break;
     }
   }, [])
@@ -177,7 +196,7 @@ const TricksView = () => {
       <p>when exploring your elemental spirit, one can perform a ritual of fixing a constant element (choosing one from the earth, air, fire, water) and conjuring essences in the other elements as a way to have more stable control. for example, you can use the entry / exit tactics for beginning and ending a session with a single element, while exploring the other three. it helps to perform sound between sessions. by sitting, time horizons tend to be concentrated, versus standing, you are more dispersed (think, time and space).</p>
       <br/>
       <br/>
-      <h3 ref={elementalFixing} id='graphs-vs-trees'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>graphs vs. trees</h3>
+      <h3 ref={graphVsTrees} id='graphs-vs-trees'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>graphs vs. trees</h3>
       <p>when exploring scenarios of information that are related to your environment (for example the trick of environmental fixing), it's important to be aware of whether you're dealing with a graph structure or a tree structure. with graphs, you're more likely to repeat or rebound an outcome, which may cause internal introspection. it is possible to convert graphs to tree's and there are theoritical algorithms online, however a possible approach is to go till failure with karmic actions and intentions of safety. trees have a natural tendency when adding elements such as air and intellect to have movement, like leaves being blown in a tree. trees can also contain graphs contained within them (like fruit on a tree) which can also contain new trees that can grow.</p>
       <br/>
       <br/>
@@ -201,15 +220,15 @@ const TricksView = () => {
       <p>aim to listen to your dreams and take action during the day to accomdate what the mind and sky is telling you. staying sober enables a more productive and healthy envrionment for dreams to arise while sleeping. it's possible to train yourself to no longer need a dream journal.</p>
       <br/>
       <br/>
-      <h3 ref={dreams} id='portals-of-transport'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>portals of transportation</h3>
+      <h3 ref={portalsOfTransport} id='portals-of-transport'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>portals of transportation</h3>
       <p>historic paths of the past, viewing perspectives of others, and varying mode of transport can create 'after burner' effects creating an idea of an after burner funnel, where outbreak like quality can be achieved (think edge of funnel of portal and tail emissions).</p>
       <br/>
       <br/>
-      <h3 ref={dreams} id='temp-motion'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>the fall movement</h3>
+      <h3 ref={tempMotion} id='temp-motion'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>the fall movement</h3>
       <p>during times of the fall and temperatures outside that are close to the body, can give you ideal temperatures for movement and body temperature to make you feel aware of motion from wind.</p>
       <br/>
       <br/>
-      <h3 ref={dreams} id='if-out-of-time'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>if 'out of time'</h3>
+      <h3 ref={ifOutOfTime} id='if-out-of-time'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>if 'out of time'</h3>
       <p>moments can speckle out into the future where if we can't get everything done today or now, structures of goals can be picked up later as shapes in the calendar.</p>
       <br/>
       <br/>
