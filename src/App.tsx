@@ -355,7 +355,7 @@ const ShopView = () => {
       <br/>
       <div style={{width: '50%', margin: 'auto'}}>
       <p>the oracle hand sensing deck include 18 custom pencil drawn images sourced from www.are.na and 15 tool based items with no image, only a planet and natural element alchemical sign is signified which you might use with your hands.</p>
-      <p>the intention is to allow readers and querents to get in tune with how to express emotions with sign like languages, the intention is to allow readers and querents to get in tune with how to express emotions with sign like languages, with expansive words to describe the cards, and action oriented ways to create as you adventure.</p>
+      <p>the intention is to allow readers and querents to get in tune with how to express emotions with sign like languages, with expansive words to describe the cards, and action oriented ways to create as you adventure.</p>
       </div>
       <br/>
       <br/>
