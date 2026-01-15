@@ -48,6 +48,10 @@ const TricksView = () => {
   const tempMotion = useRef<any>(null)
   const ifOutOfTime = useRef<any>(null)
   const subtleWaterHardness = useRef<any>(null)
+  const recoveryTime = useRef<any>(null)
+  const loseSomething = useRef<any>(null)
+  const oneLinerEquips = useRef<any>(null)
+  const earlySurprises = useRef<any>(null)
 
   function doWithThisElement(event: any) {
     event = event || window.event; // IE
@@ -244,6 +248,18 @@ const TricksView = () => {
       <br/>
       <h3 ref={subtleWaterHardness} id='subtle-water-hardness'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>cold resiliency compared to sleep repair</h3>
       <p>rather than fully plunging in a cold bath or water for crown energy repair where both 'good' and 'bad' cycles patterns are saved and possibly numbed, one can stand in cold water up to shins and use hand gestures to signify significant sensing or emotional memories to align your energy and 'harden the good', then wait for a sleep cycle to fully repair and recycle the bad. think tai chi in shallow water.</p>
+      <br/>
+      <h3 ref={recoveryTime} id='recovery-time'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>time recovery</h3>
+      <p>when making plans during a sprint, or when injury arises, think about the possible multiple order of consequences next which have either happened in the past, or, through deduction.</p>
+      <br/>
+      <h3 ref={loseSomething} id='lose-something'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>lose something, swap with an action</h3>
+      <p>in the flow of work, play, etc. our mind sometimes forget something in a held stack, so immediate replacement can smooth the practioners ability to perform.</p>
+      <br/>
+      <h3 ref={oneLinerEquips} id='one-liner-equips'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>one-liner equips</h3>
+      <p>choose and sustain one liners from key people in your family or network as motivators.</p>
+      <br/>
+      <h3 ref={earlySurprises} id='early-surprises'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>early surprises</h3>
+      <p>when creating, learning, or having magic unfold infront of your eyes, take the neccessary thinking steps even when early surprises emerge to prevent mistakes.</p>
       <br/>
     </> 
   )
