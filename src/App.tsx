@@ -52,6 +52,8 @@ const TricksView = () => {
   const loseSomething = useRef<any>(null)
   const oneLinerEquips = useRef<any>(null)
   const earlySurprises = useRef<any>(null)
+  const IGF1 = useRef<any>(null)
+  const genitalsBloodflow = useRef<any>(null)
 
   function doWithThisElement(event: any) {
     event = event || window.event; // IE
@@ -260,6 +262,12 @@ const TricksView = () => {
       <br/>
       <h3 ref={earlySurprises} id='early-surprises'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>early surprises</h3>
       <p>when creating, learning, or having magic unfold infront of your eyes, take the neccessary thinking steps even when early surprises emerge to prevent mistakes.</p>
+      <br/>
+      <h3 ref={genitalsBloodflow} id='genitals-bloodflow'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>genitals bloodflow</h3>
+      <p>natural approaches for comfort and 'warming up' to orgasms, or, generally increased genitals circulation (especially if exercise is hampered), is to use a warm bath.</p>
+      <br/>
+      <h3 ref={IGF1} id='igf1'  style={{cursor: 'pointer'}}  onClick={(evt) => doWithThisElement(evt)}>orgasms before nighttime sleeping</h3>
+      <p>a good idea to allow natural igf-1 during sleep for rejuvenation, is to not orgasm right before you doze off.</p>
       <br/>
     </> 
   )
