@@ -94,7 +94,7 @@ const AudioView = () => {
     <>  
       <div style={{maxWidth: detectMob() &&'500px'}}>
       <h1>audio</h1>
-      <p>for an oracle reading with cards contact morgan @ <a href="mailto:morgan.moskalyk@protonmail.ch">morgan.moskalyk@protonmail.ch</a></p>
+      <p>for an oracle reading with cards contact Ṅero @ <a href="mailto:build@deep6.org">build@deep6.org</a></p>
       <br/>
       <br/>
       <h3>example reading </h3>
@@ -139,8 +139,8 @@ const ShopView = () => {
       <br/>
       <img style={{width: '30%'}} src={oracleCardShowcase} />
       <p>each deck is packaged with a unique cloth that can be used to read the cards in a spread</p>
-      <p>please organize an order & e-transfer via email with morgan moskalyk <br/> owner of versus energy innovations inc., the company behind the cards</p>
-      <p>email: morgan.moskalyk@protonmail.ch</p>
+      <p>please organize an order & e-transfer via email with Ṅero moskalyk <br/> owner of Versus Energy Innovations inc., the company behind the cards</p>
+      <p>email: build@deep6.org</p>
       <br/>
       <i>deck introductory</i>
       <br/>
