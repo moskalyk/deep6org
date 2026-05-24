@@ -4,7 +4,6 @@ import jungTarotSpread from './assets/jung_tarot_spread.png'
 import './App.css'
 import YouTube from 'react-youtube';
 import oracleCardShowcase from './assets/example_of_cards.jpeg'
-import oracleHandSensingCardCommitment from './assets/commitment_card_screenshot.png'
 
 const HomeView = () => {
   return (
@@ -21,6 +20,7 @@ const HomeView = () => {
       <div style={{textAlign: 'left'}}>
         <p>𖡼 def'n: lost or abandonment of something</p>
         <p>𖦹 univers'l: reappearance as a function of repitition</p>
+        <p>ᕗ period'c: fade away luck</p>
       </div>
       <p></p>
     </>
@@ -110,21 +110,6 @@ const AudioView = () => {
 }
 
 const ShopView = () => {
-  const videoRef = useRef(null)
-  const [introductoryPulledCard, setIntroductoryPulledCard] = useState(false)
-  
-  useEffect( ()=> {
-    setInterval(async() => {
-      //@ts-ignore
-      const videoCurrentTime = await videoRef.current.internalPlayer.getCurrentTime()
-      if(videoCurrentTime >= 403 && videoCurrentTime < 411){
-        setIntroductoryPulledCard(true)
-      } else {
-        setIntroductoryPulledCard(false)
-      }
-    }, 1000)
-  }, [introductoryPulledCard])
-
   return (
     <>
       <h1>shop</h1>
@@ -142,15 +127,6 @@ const ShopView = () => {
       <p>please organize an order & e-transfer via email with Ṅero moskalyk <br/> owner of Versus Energy Innovations inc., the company behind the cards</p>
       <p>email: build@deep6.org</p>
       <br/>
-      <i>deck introductory</i>
-      <br/>
-      <br/>
-      <div style={{height: '300px', width: detectMob() ? '100%': '50%', margin: 'auto', position:'relative'}}>
-        {introductoryPulledCard && !detectMob()&& <img style={{position: 'absolute', bottom: '132px', left: '445px'}} width={"75"} height={"130"} src={oracleHandSensingCardCommitment}/>}
-        {/* @ts-ignore */}
-        <YouTube ref={videoRef} opts={{width: detectMob() ? "300" : "400", height: detectMob() ? "150" : "300"}} videoId={'864t-rKCK48'} />
-        {introductoryPulledCard &&detectMob() && <img style={{position: 'absolute'}} width={"80"} height={"130"} src={oracleHandSensingCardCommitment}/>}
-      </div>
       <br/>
       <br/>
       <br/>
@@ -160,7 +136,7 @@ const ShopView = () => {
   )
 }
 
-    function detectMob(): any {
+  function detectMob(): any {
     return ( ( window.innerWidth <= 800 ));
   }
 
@@ -180,7 +156,6 @@ function App() {
   useEffect(() => {
     window.addEventListener('scroll',function() {
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      // enter code here
         setHideMenu(false)
       } else {
         setHideMenu(true)
