@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import deep6Logo from './assets/deep6.png'
 import jungTarotSpread from './assets/jung_tarot_spread.png'
 import './App.css'
@@ -10,7 +10,7 @@ const HomeView = () => {
     <>
       <div>
         <a target="_blank">
-          <img src={deep6Logo} className="logo react" alt="React logo" />
+          <img src={deep6Logo} className="logo react" alt="deep6 iceberg" />
         </a>
       </div>
       <h1>deep6</h1>
@@ -36,7 +36,7 @@ const SpreadsView = () => {
       <br/>
       <br/>
       <h3>jung spread</h3>
-      <img style={{width: detectMob() && '100%', marginLeft: detectMob() ? '-5px': '-35px'}} src={jungTarotSpread} />
+      <img style={{width: detectMob() && '100%', marginLeft: detectMob() ? '-5px': '-35px'}} alt='jung spread' src={jungTarotSpread} />
       <ul style={{fontSize: detectMob() ? '10px': '15px', width:'500px', margin: 'auto', textAlign: 'left'}}>
         <li>1 present</li>
         <li>2 oracle card pulled randomly, flipped at end</li>
