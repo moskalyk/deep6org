@@ -4,7 +4,7 @@ import jungTarotSpread from './assets/jung_tarot_spread.png'
 import './App.css'
 import YouTube from 'react-youtube';
 import oracleCardShowcase from './assets/example_of_cards.jpeg'
-import totemsPlayingCardsBox from './assets/box_front.jpeg'
+import oracleCardShowcase from './assets/example_of_cards.jpeg'
 
 const HomeView = () => {
   return (
@@ -130,20 +130,6 @@ const ShopView = () => {
       <br/>
       <br/>
       <br/>
-      <i>Totem Playing Cards Deck</i>
-      <p>$TBA CAD + tax & shipping</p>
-      <br/>
-      <br/>
-      <img style={{width: '2.2in'}} src={totemsPlayingCardsBox} />
-      <p>🃏︎	   🃟</p>
-
-      <p>A non-standard 52+2 playing card deck designed with animals & insects; stained-sigillism styled.</p>
-
-      <p>2 princess cards included, along with a fox and bunny cards as joker totems, which can swap them out.</p>
-
-      <p>tucked: Cribbage game explainer</p>
-
-	  <p>🂠</p>
       <br/>
       <br/>
       <br/>
