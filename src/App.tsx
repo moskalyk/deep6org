@@ -4,7 +4,7 @@ import jungTarotSpread from './assets/jung_tarot_spread.png'
 import './App.css'
 import YouTube from 'react-youtube';
 import oracleCardShowcase from './assets/example_of_cards.jpeg'
-import totemsPlayingCardsBox from './assets/box_front.jpeg'
+import totemsPlayingCardsBox from './assets/box_front.png'
 
 const HomeView = () => {
   return (
@@ -134,7 +134,7 @@ const ShopView = () => {
       <p>$TBA CAD + tax & shipping</p>
       <br/>
       <br/>
-      <img style={{width: '2.2in'}} src={totemsPlayingCardsBox} />
+      <img style={{width: '2.2in'}} src={totemsPlayingCardsBox} alt="totem playing cards front" />
       <p>🃏︎	   🃟</p>
 
       <p>A non-standard 52+2 playing card deck designed with animals & insects; stained-sigillism styled.</p>
