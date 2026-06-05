@@ -4,7 +4,7 @@ import jungTarotSpread from './assets/jung_tarot_spread.png'
 import './App.css'
 import YouTube from 'react-youtube';
 import oracleCardShowcase from './assets/example_of_cards.jpeg'
-import totemsPlayingCardsBox from './assets/box_front.png'
+import totemPlayingCardsBox from './assets/box_front.png'
 
 const HomeView = () => {
   return (
@@ -123,29 +123,32 @@ const ShopView = () => {
       </div>
       <br/>
       <br/>
-      <img style={{width: '30%'}} src={oracleCardShowcase} />
+      <img style={{width: '30%'}} src={oracleCardShowcase} alt="oracle cards splay and yellow cloth"/>
       <p>each deck is packaged with a unique cloth that can be used to read the cards in a spread</p>
-      <p>please organize an order & e-transfer via email with Ṅero moskalyk <br/> owner of Versus Energy Innovations inc., the company behind the cards</p>
+      <p>please organize an order & e-transfer via email with Ṅero Moskalyk <br/> owner of Versus Energy Innovations inc., the company behind the cards</p>
       <p>email: build@deep6.org</p>
       <br/>
       <br/>
+	  <hr/>
       <br/>
+	  <br/>
       <i>Totem Playing Cards Deck</i>
-      <p>$TBA CAD + tax & shipping</p>
+      <p>$45 CAD + tax & shipping</p>
       <br/>
-      <br/>
-      <img style={{width: '2.2in'}} src={totemsPlayingCardsBox} alt="totem playing cards front" />
-      <p>🃏︎	   🃟</p>
+      <img style={{width: '2.2in'}} src={totemPlayingCardsBox} alt="totem playing cards front" />
+      <p>🃟</p>
 
-      <p>A non-standard 52+2 playing card deck designed with animals & insects; stained-sigillism styled.</p>
+      <p>a non-standard 52+2 playing card deck designed with animals & insects artwork; stained-sigillism styled.</p>
 
       <p>2 princess cards included, along with a fox and bunny cards as joker totems, which can swap them out.</p>
 
-      <p>tucked: Cribbage game explainer</p>
-
 	  <p>🂠</p>
+	  <br/>
+      <p>box packed: cribbage game explainer & matte-finish cards</p>
+	  <p>please organize an order & e-transfer via email with Ṅero Moskalyk <br/> owner of Versus Energy Innovations inc., the company behind the cards</p>
+      <p>email: build@deep6.org</p>
       <br/>
-      <br/>
+	  <br/>
       <br/>
     </>
   )
