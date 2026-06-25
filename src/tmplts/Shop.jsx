@@ -30,6 +30,7 @@ owner of Versus Energy Innovations inc., the company behind the cards
 						<p>🃟</p>
 						<p style='padding: 10px'>a non-standard 52+2 playing card deck designed with animals & insects artwork; stained-sigillism styled.</p>
 						<p style='padding: 10px'>2 princess cards included, along with a fox and bunny cards as joker totems, which can swap them out.</p>
+						<p style='padding: 10px'>tucked: Cribbage game explainer</p>
 						<p>🂠</p>
 				  	</div>
 				</div>
