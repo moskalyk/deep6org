@@ -1,3 +1,6 @@
-# deep6 oracle website
+# deep6
 
-a single page application for displaying information about deep6 that includes information about magic tricks, example assistance for guiding yourself during card readings, and a place to order products.
+an oracle website to expalin tricks to alchemy and magic, sell products like cards, and provide readings for consultation.
+
+## built
+- teakjs

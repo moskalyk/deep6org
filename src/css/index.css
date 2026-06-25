@@ -1,0 +1,43 @@
+body {
+    font-family: 'Courier';
+}
+
+.logo {
+    height: 10em;
+}
+
+#slogan {
+    text-align: center;
+}
+
+.splash {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier';
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+span.hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.shopping-container {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+}
+
+.shopping-container div {
+    background-color: white;
+    border: 1px solid black;
+    font-size: 20px;
+        width: 100%;
+
+}
